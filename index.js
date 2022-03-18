@@ -16,16 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Sends message for default URL
-app.get('/', (req, res) => {
-    // db.push("~employees[]", {
-    //     id: 0,
-    //     name: "zero",
-    //     role: 0,
-    //     age: 0,
-    //     gender: "x"
-    // }, true);
-    res.json({ message: 'Hola!' });
-});
+app.get('/', (req, res) => res.json({ message: 'Hola!' }));
 
 // CRUD employee
 app.get('/v1/employees/', (req, res) => {
