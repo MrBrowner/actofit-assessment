@@ -1,0 +1,46 @@
+### {"employees":[{"id":0,"name":"zero","role":0,"age":0,"gender":"x"}]}
+
+###
+http://localhost:8666/
+
+###
+GET http://localhost:8666/v1/employees/
+
+###
+GET http://localhost:8666/v1/employees/0
+
+###
+POST http://localhost:8666/v1/employees/
+Content-Type: application/json
+
+{
+    "name": "two",
+    "role": 2,
+    "age": 0,
+    "gender": "F"
+}
+
+###
+PUT http://localhost:8666/v1/employees/1
+Content-Type: application/json
+
+{
+    "name": "oneone",
+    "role": 1,
+    "age": 1,
+    "gender": "M"
+}
+
+###
+PATCH http://localhost:8666/v1/employees/123
+Content-Type: application/json
+
+{
+    "name": "oneone",
+    "role": 1,
+    "age": 1,
+    "gender": "M"
+}
+
+###
+DELETE http://localhost:8666/v1/employees/3
